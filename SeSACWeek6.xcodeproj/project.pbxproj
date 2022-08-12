@@ -28,6 +28,9 @@
 		9258C51C28A1F39C0089A229 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9258C51A28A1F39C0089A229 /* CustomCollectionViewCell.xib */; };
 		9258C51E28A1F64E0089A229 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258C51D28A1F64E0089A229 /* MainViewController.swift */; };
 		9258C52028A1FC2B0089A229 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258C51F28A1FC2B0089A229 /* MainTableViewCell.swift */; };
+		9270A26B28A34393009A45CD /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9270A26A28A34393009A45CD /* Protocol.swift */; };
+		9270A26E28A343E4009A45CD /* TMDBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9270A26D28A343E4009A45CD /* TMDBAPIManager.swift */; };
+		9270A27228A493A7009A45CD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9270A27128A493A7009A45CD /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		9258C51A28A1F39C0089A229 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		9258C51D28A1F64E0089A229 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = View/MainViewController.swift; sourceTree = "<group>"; };
 		9258C51F28A1FC2B0089A229 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		9270A26A28A34393009A45CD /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		9270A26D28A343E4009A45CD /* TMDBAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIManager.swift; sourceTree = "<group>"; };
+		9270A27128A493A7009A45CD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 		9258C4E828A090030089A229 /* SeSACWeek6 */ = {
 			isa = PBXGroup;
 			children = (
+				9270A26C28A343A6009A45CD /* Protocol */,
 				9258C51228A1DFE20089A229 /* View */,
 				9258C50928A094920089A229 /* Network */,
 				9258C4E928A090030089A229 /* AppDelegate.swift */,
@@ -100,6 +107,7 @@
 				9258C4F728A090040089A229 /* Info.plist */,
 				9258C50728A091180089A229 /* APIKey.swift */,
 				9258C51028A0AC8E0089A229 /* ClosureViewController.swift */,
+				9270A27128A493A7009A45CD /* MapViewController.swift */,
 			);
 			path = SeSACWeek6;
 			sourceTree = "<group>";
@@ -110,6 +118,7 @@
 				9258C50A28A094A50089A229 /* Endpoint.swift */,
 				9258C50C28A095110089A229 /* URL+Extension.swift */,
 				9258C50E28A0A7CD0089A229 /* KakaoAPIManager.swift */,
+				9270A26D28A343E4009A45CD /* TMDBAPIManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -125,6 +134,14 @@
 				9258C51F28A1FC2B0089A229 /* MainTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9270A26C28A343A6009A45CD /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9270A26A28A34393009A45CD /* Protocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +230,7 @@
 				9258C52028A1FC2B0089A229 /* MainTableViewCell.swift in Sources */,
 				9258C4EE28A090030089A229 /* ViewController.swift in Sources */,
 				9258C4EA28A090030089A229 /* AppDelegate.swift in Sources */,
+				9270A26B28A34393009A45CD /* Protocol.swift in Sources */,
 				9258C51428A1E0360089A229 /* CustomButton.swift in Sources */,
 				9258C51E28A1F64E0089A229 /* MainViewController.swift in Sources */,
 				9258C51128A0AC8E0089A229 /* ClosureViewController.swift in Sources */,
@@ -222,7 +240,9 @@
 				9258C50F28A0A7CD0089A229 /* KakaoAPIManager.swift in Sources */,
 				9258C50B28A094A50089A229 /* Endpoint.swift in Sources */,
 				9258C50D28A095110089A229 /* URL+Extension.swift in Sources */,
+				9270A26E28A343E4009A45CD /* TMDBAPIManager.swift in Sources */,
 				9258C51B28A1F39C0089A229 /* CustomCollectionViewCell.swift in Sources */,
+				9270A27228A493A7009A45CD /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +406,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -414,7 +434,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

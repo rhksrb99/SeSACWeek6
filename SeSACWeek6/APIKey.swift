@@ -13,4 +13,5 @@ import Foundation
 // property list -> API Configuration
 enum APIKey {
     static let kakao = "4f277be3c5c26d433b9022b7679ee3c4"
+    static let tmdb = "eec57b2cacac989432c48e0c285d2bba"
 }

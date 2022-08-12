@@ -12,18 +12,19 @@
             <connections>
                 <outlet property="btn_heart" destination="yYH-Cx-qlv" id="fgr-L1-Snn"/>
                 <outlet property="img_main" destination="B9Q-ks-dfk" id="UhH-P7-hRB"/>
+                <outlet property="lb_contents" destination="8wA-Dc-DBJ" id="4ah-WN-wzi"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="354" height="150"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B9Q-ks-dfk">
-                    <rect key="frame" x="8" y="8" width="134" height="134"/>
+                    <rect key="frame" x="8" y="8" width="338" height="134"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYH-Cx-qlv">
-                    <rect key="frame" x="94" y="8" width="48" height="48"/>
+                    <rect key="frame" x="298" y="8" width="48" height="48"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="BUD-Zt-lkI"/>
                         <constraint firstAttribute="width" constant="48" id="jcs-SU-lO6"/>
@@ -34,6 +35,12 @@
                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20"/>
                     </buttonConfiguration>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wA-Dc-DBJ">
+                    <rect key="frame" x="156" y="64.5" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
@@ -41,11 +48,13 @@
                 <constraint firstAttribute="trailing" secondItem="B9Q-ks-dfk" secondAttribute="trailing" constant="8" id="MTN-wC-jrb"/>
                 <constraint firstAttribute="bottom" secondItem="B9Q-ks-dfk" secondAttribute="bottom" constant="8" id="Tq3-gh-8Gr"/>
                 <constraint firstItem="yYH-Cx-qlv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Xtw-NS-etN"/>
+                <constraint firstItem="8wA-Dc-DBJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="c7S-r6-yfn"/>
+                <constraint firstItem="8wA-Dc-DBJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ntt-Qd-TMD"/>
                 <constraint firstItem="B9Q-ks-dfk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="qAn-I7-GII"/>
                 <constraint firstAttribute="trailing" secondItem="yYH-Cx-qlv" secondAttribute="trailing" constant="8" id="zjl-3R-t1m"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="85.507246376811594" y="218.30357142857142"/>
+            <point key="canvasLocation" x="231.8840579710145" y="218.30357142857142"/>
         </view>
     </objects>
     <resources>

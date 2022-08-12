@@ -27,6 +27,7 @@ class CustomView: UIView {
 
     @IBOutlet weak var img_main: UIImageView!
     @IBOutlet weak var btn_heart: UIButton!
+    @IBOutlet weak var lb_contents: UILabel!
     
     // 초기화를 해줘야한다!
     // 옵셔널 오류를 해제하기 위한 과정
@@ -35,7 +36,7 @@ class CustomView: UIView {
         
         let view = UINib(nibName: "CustomView", bundle: nil).instantiate(withOwner: self).first as! UIView
         view.frame = bounds
-        view.backgroundColor = .systemIndigo
+        view.backgroundColor = .lightGray
         
         self.addSubview(view)
         
